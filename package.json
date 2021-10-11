@@ -16,7 +16,7 @@
   "author": "John ahn",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
@@ -30,6 +30,8 @@
     "supports-color": "^7.1.0"
   },
   "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.16.13",
     "concurrently": "^4.1.0",
     "nodemon": "^1.19.1"
   }
