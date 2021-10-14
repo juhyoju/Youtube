@@ -1,10 +1,10 @@
-import React from 'react';
-import { Typography, Button, Form, message, Input } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
-import Dropzone from 'react-dropzone';
+import React from 'react'
+import { Typography, Button, Form, message, Input } from 'antd'
+import { PlusOutlined } from '@ant-design/icons'
+import Dropzone from 'react-dropzone'
 
-const { Title } = Typography;
-const { TextArea } = Input;
+const { Title } = Typography
+const { TextArea } = Input
 
 function VideoUploadPage() {
   return (
@@ -16,7 +16,7 @@ function VideoUploadPage() {
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* drop Zone */}
 
-          <Dropzone onDrop="" multiple="" maxSize="">
+          <Dropzone onDrop='' multiple='' maxSize=''>
             {({ getRootProps, getInputProps }) => (
               <div
                 style={{
@@ -25,12 +25,12 @@ function VideoUploadPage() {
                   border: '1px solid lightgray',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  justifyContent: 'center'
                 }}
                 {...getRootProps()}
               >
                 <input {...getInputProps()} />
-                <PlusOutlined type="plus" style={{ fontSize: '3rem' }} />
+                <PlusOutlined type='plus' style={{ fontSize: '3rem' }} />
               </div>
             )}
           </Dropzone>
@@ -38,7 +38,7 @@ function VideoUploadPage() {
           {/* Thumbnail */}
 
           <div>
-            <img src="" alt="" />
+            <img src='' alt='' />
           </div>
         </div>
 
@@ -46,37 +46,37 @@ function VideoUploadPage() {
         <br />
 
         <label>Title</label>
-        <Input onChange="" value="" />
+        <Input onChange='' value='' />
 
         <br />
         <br />
 
         <label>Description</label>
-        <TextArea onChange="" value="" />
+        <TextArea onChange='' value='' />
 
         <br />
         <br />
 
-        <select onChange="">
-          <option key="" value=""></option>
+        <select onChange=''>
+          <option key='' value=''></option>
         </select>
 
         <br />
         <br />
 
-        <select onChange="">
-          <option key="" value=""></option>
+        <select onChange=''>
+          <option key='' value=''></option>
         </select>
 
         <br />
         <br />
 
-        <Button type="primary" size="large" onClick="">
+        <Button type='primary' size='large' onClick=''>
           Submit
         </Button>
       </Form>
     </div>
-  );
+  )
 }
 
-export default VideoUploadPage;
+export default VideoUploadPage
