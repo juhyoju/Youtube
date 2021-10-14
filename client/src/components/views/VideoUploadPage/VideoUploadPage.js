@@ -51,6 +51,7 @@ function VideoUploadPage() {
 
     Axios.post('/api/video/uploadfiles', formData, config).then(response => {
       if (response.data.success) {
+        console.log(response.data)
       } else {
         alert('비디오 업로드 실패')
       }
@@ -66,7 +67,12 @@ function VideoUploadPage() {
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* drop Zone */}
 
-          <Dropzone onDrop={onDrop} multiple={false} maxSize={1000000000}>
+          <Dropzone
+            accept='video/*'
+            onDrop={onDrop}
+            multiple={false}
+            maxSize={80000000000000}
+          >
             {({ getRootProps, getInputProps }) => (
               <div
                 style={{
