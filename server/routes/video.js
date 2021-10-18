@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-//const { Video } = require('../models/Video')
+const { Video } = require('../models/Video')
 
 const { auth } = require('../middleware/auth')
 const multer = require('multer')
@@ -36,10 +36,10 @@ router.post('/uploadfiles', (req, res) => {
 
   upload(req, res, err => {
     if (err) {
-      return res.json({ sucsess: false, err })
+      return res.json({ success: false, err })
     }
     return res.json({
-      sucsess: true,
+      success: true,
       url: res.req.file.path,
       fileName: res.req.file.filename
     })
